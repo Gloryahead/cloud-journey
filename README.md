@@ -28,3 +28,30 @@ The `day1.txt` file contains my first cloud computing note and Git setup exercis
 1. Clone the repo:
 bash
 git clone https://github.com/Gloryahead/cloud-journey.git
+
+
+## Day 2 – Linux, Bash, and Text Processing Practice
+
+- Practiced **advanced Linux commands**:
+  - Navigation: `pwd`, `ls -l`, `ls -a`, `cd`, `tree`
+  - File & folder management: `mkdir`, `touch`, `mv`, `cp`, `rm`
+  - Permissions & ownership: `chmod`, `chown`
+  
+- Practiced **text processing on a sample log file (`logfile.txt`)**:
+  - Viewing files: `cat`, `less`, `head`, `tail`
+  - Searching: `grep "ERROR" logfile.txt`
+  - Counting: `wc -l logfile.txt`, `grep -c "WARN" logfile.txt`
+  - Combining commands: `tail -n 10 logfile.txt | grep "WARN"`
+  - Saving results: `grep "ERROR" logfile.txt > errors.txt`
+
+- Practiced **process monitoring and management**:
+  - Listing running processes: `ps aux`
+  - Monitoring processes in real-time: `top` and `htop`
+  - Running background processes: `sleep 1000 &`
+  - Killing processes safely using `kill <PID>`
+
+- Practiced **bash scripting**:
+  - Created and ran a script that prints "Hello Cloud" and the current date
+  - Made scripts executable using `chmod +x`
+
+
