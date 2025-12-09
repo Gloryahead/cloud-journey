@@ -1,4 +1,88 @@
+# ---------
+# SECRETS
+# ---------
+# Never commit credentials or sensitive files
+*.env
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.secret
+credentials*
+secrets*
+private*
+.env.*
+config.json
+aws_credentials
+token.json
+
+# AWS CLI directory (if copied by mistake)
+.aws/
+
+# -------------------
+# PYTHON ENVIRONMENT
+# -------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# -------------------
+# NODE (Future use)
+# -------------------
+node_modules/
+npm-debug.log
+
+# -------------------
+# LOGS & TEMP FILES
+# -------------------
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# -------------------
+# BACKUPS / ARCHIVES
+# -------------------
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.bak
+*.backup
 backup_*.tar.gz
+backup_*/
+
+# -------------------
+# DATA FILES (local only)
+# -------------------
 data/
-backup_*.tar.gz
-data/
+test_download/
+downloads/
+uploads/
+cache/
+
+# -------------------
+# SYSTEM FILES
+# -------------------
+.DS_Store
+Thumbs.db
+
+# -------------------
+# EDITOR / IDE FILES
+# -------------------
+.vscode/
+.idea/
+*.code-workspace
+
+# -------------------
+# GIT DIRECTORIES (never commit internal git stuff)
+# -------------------
+.gitignore
+!.gitignore
+
