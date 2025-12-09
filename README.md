@@ -55,3 +55,31 @@ git clone https://github.com/Gloryahead/cloud-journey.git
   - Made scripts executable using `chmod +x`
 
 
+## Day 3 – Bash Scripting & Automation
+
+- Learned how to write Bash scripts using:
+  - Variables
+  - User input (`read`)
+  - Conditions (`if/else`)
+  - Loops (`for`)
+  - Command substitution (`$( )`)
+- Automated log scanning using grep, tail, and wc
+- Created a backup automation script using tar
+- Practiced making scripts executable and running them in WSL
+- Committed all Bash scripts to GitHub
+
+## Day 4 – AWS CLI Setup, IAM Configuration & S3 Automation
+
+Today I began working with AWS from the command line, setting up secure IAM access and automating S3 operations.
+
+### IAM User Setup
+- Logged in with the root account only to create an IAM user (best practice)
+- Created a dedicated IAM user (`cli-admin`) for AWS CLI access
+- Added the user to an **Admin** group with `AdministratorAccess` policy
+- Generated programmatic access keys (NOT stored in GitHub)
+- Configured the AWS CLI using `aws configure`
+
+###  AS CLI Verification
+After configuring the CLI, I validated that it was authenticated correctly using:
+aws sts get-caller-identity
+
